@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script>
+	<script src="scripts/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	<!-- MOBILE FRIENDLY -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/grid.css">
 </head>
 <body>
 
-	<!-- NAVBAR -->
-	<div class="container">
-			<div class="col-md-12" class="empty-space" style='height:50px;'></div>
-		<div class="row">
-			<div class="col-md-2" class="logo">
-				<a href="/">LOGO</a>
-			</div>
-			<div class="col-md-7" class="empty-space"></div>
-				<div class="col-md-1" class"navbar-item">
-					<a href="/">WORK</a>
+	<header class="main-header">
+		<div class="wrapper">
+			<a class="brand active transition" href="index.html">
+				<!-- ::before == $0 -->
+				<span>Dorith Vinken</span>
+			</a>
+			<nav style="color: rgb(255, 255, 255);"> <!-- == $0 -->
+				<p class="menu-active">
+					<span style="background-color: rgb(255, 255, 255);">
+						<!-- ::before
+						::after -->
+					</span>
+				</p>
+				<div class="cont-menu">
+					<div class="containter">
+						<ul class="menu-items">
+							<li id="menu-item-work" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom">
+								<a href="/" class="menu-link transition main-menu-link" data-page"work">work</a>
+							</li>
+							<li id="menu-item-about" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom">
+								<a href="/" class="menu-link transition main-menu-link" data-page"about">about</a>
+							</li>
+							<li id="menu-item-contact" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom">
+								<a href="/" class="menu-link transition main-menu-link" data-page"contact">contact</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-md-1" class"navbar-item">
-					<a href="/" >ABOUT</a>
-				</div>
-				<div class="col-md-1" class"navbar-item">
-					<a href="/" >CONTACT</a>
-				</div>
-			</div>
+			</nav>
 		</div>
+	</header>
 
-	<div class="col-md-12" class="empty-space" style='height:50px;'></div>
+<!-- MASONRY GRID -->
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2 grid-item--height2"></div>
+  <div class="grid-item grid-item--height3"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item grid-item--width3"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item grid-item--width2 grid-item--height3"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2 grid-item--height2"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height3"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+</div>
 
-	<div class="container">
-		<div class ="row">
-			<div class="col-md-3">
-				<a href="/"><img src="images/Nieuwe-Tieten.jpg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="/"><img src="images/bluebird.jpg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="/"><img src="images/boy.jpeg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="/"><img src="images/het-zusje-van-katia_org.jpg" class="img-responsive"></a>
-			</div>
-		</div>
-
-		<div class ="row">
-			<div class="col-md-3">
-				<a href="/"><img src="images/Joy-filmposter.jpg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="/"><img src="images/angelique.jpeg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="/"><img src="images/tussenstand.jpg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="/"><img src="images/fatih.jpeg" class="img-responsive"></a>
-			</div>
-		</div>
-	</div>
-
+	
 </body>
 </html>
