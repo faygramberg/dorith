@@ -1,8 +1,11 @@
 * { box-sizing: border-box; }
 
 .grid {
-  background: #EEE;
+
   max-width: 1200px;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
 }
 
 /* clearfix */
@@ -16,11 +19,11 @@
 
 .grid-sizer,
 .grid-item {
-  width: 20%;
+  width: 30%;
 }
 
 .grid-item {
-  height: 120px;
+  height: 320px;
   float: left;
   background: #D26;
   border: 2px solid #333;
@@ -31,6 +34,6 @@
 .grid-item--width2 { width:  40%; }
 .grid-item--width3 { width:  60%; }
 
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
+.grid-item--height2 { height: 400px; }
+.grid-item--height3 { height: 460px; }
+.grid-item--height4 { height: 560px; }
