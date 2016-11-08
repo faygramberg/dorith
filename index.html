@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!-- JQUERY -->
-
-	 <!-- <script src="scripts/jquery-3.1.1.min.js"></script> -->
-	 
-	 <!-- <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script> -->
-	<!-- <script type="text/javascript" src="scripts/script.js"></script> -->
+	
+	<meta charset="UTF-8">
 
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/grid.css">
@@ -17,10 +12,10 @@
 	<header class="main-header">
 		<div class="wrapper">
 			<a class="brand active transition" href="index.html">
-				<!-- ::before == $0 -->
+				<!-- ::before -->
 				<span>Dorith Vinken</span>
 			</a>
-			<nav style="color: rgb(255, 255, 255);"> <!-- == $0 -->
+			<nav style="color: rgb(255, 255, 255);"> 
 				<p class="menu-active">
 					<span style="background-color: rgb(255, 255, 255);">
 						<!-- ::before
@@ -47,16 +42,28 @@
 	</header>
 
 <!-- MASONRY GRID -->
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+<div class="grid">
   <div class="grid-sizer"></div>
+  <div class="inner" class="grid-item grid-item--height2">
+  	<div class="overlay">
+  		<h2>
+  			<span>Titel Film</span>
+  		</h2>
+  	</div>
+  </div>
+
+  <div class="grid-item grid-item--height2"></div>
   <div class="grid-item grid-item--height2"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
-  <div class="grid-item"></div>
+
 </div>
 
-	<script src="scripts/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+		<script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>

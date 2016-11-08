@@ -17,9 +17,11 @@
 
 /* ---- grid-item ---- */
 
+
+
 .grid-sizer,
 .grid-item {
-  width: 22em;
+  width: 33%;
 }
 
 .grid-item {
@@ -29,7 +31,7 @@
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
-  margin-bottom: 0.5em;
+  margin: 2px;
 }
 
 .grid-item--width2 { width:  40%; }
@@ -38,3 +40,92 @@
 .grid-item--height2 { height: 400px; }
 .grid-item--height3 { height: 460px; }
 .grid-item--height4 { height: 560px; }
+
+
+
+@media screen and (max-width: 768px) {
+  /* 5 columns for larger screens */
+  .grid-sizer .grid-item { width: 100%; }
+}
+
+
+/*.grid .inner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    background: #4AD4C2;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.grid .inner .overlay h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    color: #FDFC96;
+    font-family: '', sans-serif;
+    font-size: 42px;
+    line-height: 52px;
+    -webkit-transform: translate(-50%, -60%);
+    -moz-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+    -o-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.grid .inner .overlay h2 span {
+   display: inline-block
+}
+
+.grid .inner:hover .overlay {
+    opacity: 1
+}
+
+.grid .inner:hover .overlay h2 {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.grid .inner:hover .overlay h2 span.thrill {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear
+}
+
+.grid .inner:hover .overlay h2 span {
+    -webkit-animation-name: falldown;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    animation-name: falldown;
+    animation-duration: 0.3s;
+    animation-timing-function: ease
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
